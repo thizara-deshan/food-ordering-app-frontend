@@ -1,30 +1,56 @@
-# React + TypeScript + Vite
+# Food Ordering App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Food Ordering App - Frontend is a user-friendly web application designed for a seamless food ordering experience. Built with React and styled using Tailwind CSS, this app features a dynamic user interface that adapts to various devices. Users can browse through a variety of food items, add their favorite dishes to the cart, and place orders with ease. The app includes user authentication, allowing users to create accounts, log in, and enjoy a personalized experience.
 
-Currently, two official plugins are available:
+<center>
+<img src="https://raw.githubusercontent.com/thizara-deshan/food-ordering-app-frontend/main/public/Medium%20screen%20view.png" alt="web view
+width=70% height=50%
+/>
+</center>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<center>
+<img src="https://raw.githubusercontent.com/thizara-deshan/food-ordering-app-frontend/main/public/Mobile%20View.png" alt="mobile view
+width=25% height=50%
+/>
+</center>
 
-## Expanding the ESLint configuration
+Live demo here: <a href="https://food-ordering-app-frontend-lwtc.onrender.com/" target="_blank">food-ordering-app-frontend-lwtc.onrender.com</a>
+<br/>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Features](#-features)
+- [Installation and Setup Instructions](#-installation-and-setup-instructions)
+- [Folder structure](#-folder-structure)
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Place orders seamlessly
+- User authentication
+- Fully Responsive design
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 🛠 Installation and Setup Instructions
+
+1. Installation: `npm install`
+
+2. Run the project: `npm start`
+
+## Folder structure
+
+- `/public`: publicly accessible contents
+- `/src`: all the components used in this project.
+  - `/src/components/`: each reusable components of each pages.
+  - `/src/layout`: layout for the web app.
+  - `/src/pages`: pages that include in the web app.
+  - `/src/forms`: user and restaurant forms
+  - `/src/auth`: authentication hooks in the web app.
+  - `/src/api`: api request and data fetchings
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1.  Fork the repository
+2.  Create a new branch (`git checkout -b feature-branch`)
+3.  Make your changes
+4.  Commit your changes (`git commit -m 'Add some feature'`)
+5.  Push to the branch (`git push origin feature-branch`)
+6.  Create a new Pull Request
