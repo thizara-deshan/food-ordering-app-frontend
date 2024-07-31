@@ -54,8 +54,6 @@ type Props = {
   restaurant?: Restaurant | null;
   onSave: (restaurantData: FormData) => void;
   isLoading: boolean;
-  onUpdate: (restaurantData: FormData) => void;
-  upDateLoading: boolean;
 };
 
 function ManageRestaurantForm({ onSave, isLoading, restaurant }: Props) {
