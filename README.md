@@ -6,12 +6,14 @@ The Food Ordering App - Frontend is a user-friendly web application designed for
 <img src="https://raw.githubusercontent.com/thizara-deshan/food-ordering-app-frontend/main/public/Medium%20screen%20view.png" alt="web view
 width=70% height=50%
 />
+
 </center>
 
 <center>
 <img src="https://raw.githubusercontent.com/thizara-deshan/food-ordering-app-frontend/main/public/Mobile%20View.png" alt="mobile view
 width=25% height=50%
 />
+
 </center>
 
 Live demo here: <a href="https://food-ordering-app-frontend-lwtc.onrender.com/" target="_blank">food-ordering-app-frontend-lwtc.onrender.com</a>
