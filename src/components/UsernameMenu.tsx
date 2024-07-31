@@ -1,4 +1,4 @@
-import { CircleUserRound, User } from "lucide-react";
+import { CircleUserRound, User, Utensils } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -19,7 +19,7 @@ function UsernameMenu() {
     <DropdownMenu>
       <DropdownMenuTrigger className="flex items-center px-3 font-bold hover:text-orange-500 gap-2">
         <CircleUserRound className="text-orange-500" />
-        {user?.name}
+        {user?.name?.toUpperCase()}
       </DropdownMenuTrigger>
       <DropdownMenuContent className="">
         <DropdownMenuLabel className="font-bold text-l text-center">
@@ -27,11 +27,26 @@ function UsernameMenu() {
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
 
-        <DropdownMenuItem className=" px-3">
-          <Link to="/user-profile" className="font-bold hover:text-orange-500">
+        <DropdownMenuItem className=" px-5">
+          <Link
+            to="/user-profile"
+            className="font-semibold hover:text-orange-500"
+          >
             <span className="flex gap-2 items-center justify-center">
               <User className="" />
               User Profile
+            </span>
+          </Link>
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+        <DropdownMenuItem className="px-5">
+          <Link
+            to="/manage-restaurant"
+            className="font-semibold hover:text-orange-500"
+          >
+            <span className="flex gap-2 items-center justify-center">
+              <Utensils className="" />
+              Manage Restaurant
             </span>
           </Link>
         </DropdownMenuItem>
