@@ -1,6 +1,6 @@
-# Food Ordering App
+# Food Ordering App - OrderEats
 
-The Food Ordering App - Frontend is a user-friendly web application designed for a seamless food ordering experience. Built with React and styled using Tailwind CSS, this app features a dynamic user interface that adapts to various devices. Users can browse through a variety of food items, add their favorite dishes to the cart, and place orders with ease. The app includes user authentication, allowing users to create accounts, log in, and enjoy a personalized experience.
+OrderEats App - Frontend is a user-friendly web application designed for a seamless food ordering experience. Built with React and styled using Tailwind CSS, this app features a dynamic user interface that adapts to various devices. Users can browse through a variety of food items, add their favorite dishes to the cart, and place orders with ease. The app includes user authentication, allowing users to create accounts, log in, and enjoy a personalized experience.
 
 ## Screenshots
 
