@@ -1,4 +1,4 @@
-export const cuisineOptions = [
+export const cusineOptions = [
   "Sri Lankan",
   "American",
   "Chinese",

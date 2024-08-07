@@ -12,6 +12,16 @@ export type Restaurant = {
     name: string;
     price: number;
   }[];
-  image: string;
+  imageurl: string;
   lastUpdated: string;
+};
+
+export type RestaurantSearchResponse = {
+  data: Restaurant[];
+  pagination: {
+    total: number;
+
+    page: number;
+    pages: number;
+  };
 };

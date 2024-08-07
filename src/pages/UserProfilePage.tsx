@@ -6,7 +6,7 @@ function UserProfilePage() {
   const { updateUser, isLoading: isUpdateLoading } = useUpdateMyUser();
 
   if (isGetLoading) {
-    return <span>Loading...</span>;
+    return <span>Please Wait... Server takes about 1 minute to Load data</span>;
   }
   return (
     <UserProfileForm

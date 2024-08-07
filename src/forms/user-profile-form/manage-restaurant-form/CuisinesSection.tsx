@@ -4,7 +4,7 @@ import {
   FormItem,
   FormMessage,
 } from "@/components/ui/form";
-import { cuisineOptions } from "@/config/restaurant-options-config";
+import { cusineOptions } from "@/config/restaurant-options-config";
 import { useFormContext } from "react-hook-form";
 import CuisineCheckBox from "./CuisineCheckBox";
 
@@ -24,10 +24,10 @@ function CuisinesSection() {
         render={({ field }) => (
           <FormItem>
             <div className="grid md:grid-cols-4 gap-4">
-              {cuisineOptions.map((cuisinesItem) => (
+              {cusineOptions.map((cusinesItem) => (
                 <CuisineCheckBox
-                  key={cuisinesItem}
-                  cusine={cuisinesItem}
+                  key={cusinesItem}
+                  cusine={cusinesItem}
                   field={field}
                 />
               ))}

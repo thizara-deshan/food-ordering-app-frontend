@@ -8,11 +8,15 @@ import ManageRestaurantForm from "@/forms/user-profile-form/manage-restaurant-fo
 function ManageRestaurantPage() {
   const { createRestaurant, isLoading: createLoading } =
     useCreateMyRestaurant();
-  const { restaurant } = useGetMyRestaurant();
+  const { restaurant, isLoading: getLoading } = useGetMyRestaurant();
   const { updateRestaurant, isLoading: updateLoading } =
     useUpdateMyRestaurant();
 
   const isEditing = !!restaurant;
+
+  if (getLoading) {
+    return <div>Please Wait... Server takes about 1 minute to Load data</div>;
+  }
 
   return (
     <ManageRestaurantForm
