@@ -20,7 +20,7 @@ function HomePage() {
         <span className="text-xl">Don't starve, just order</span>
         <SearchBar
           onSubmit={handleSearchSubmit}
-          placeholder="Search by City or Town"
+          placeholder="Search by City Ex: Colombo"
         />
       </div>
       <div className="grid md:grid-cols-2 gap-5">
