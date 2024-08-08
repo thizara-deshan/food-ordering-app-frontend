@@ -15,7 +15,14 @@ function ManageRestaurantPage() {
   const isEditing = !!restaurant;
 
   if (getLoading) {
-    return <div>Please Wait... Server takes about 1 minute to Load data</div>;
+    return (
+      <>
+        <div className="w-8 h-8 border-4 border-dashed rounded-full animate-spin border-blue-500"></div>
+        <div>
+          Please Wait... Sometimes Server takes about 1 minute to Load data
+        </div>
+      </>
+    );
   }
 
   return (

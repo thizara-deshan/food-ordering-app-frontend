@@ -126,7 +126,11 @@ function ManageRestaurantForm({ onSave, isLoading, restaurant }: Props) {
         <Separator />
         <ImageSection />
 
-        {isLoading ? <LoadingButton /> : <Button type="submit">Submit</Button>}
+        {isLoading ? (
+          <LoadingButton />
+        ) : (
+          <Button type="submit">{!restaurant ? "Submit" : "Update"}</Button>
+        )}
       </form>
     </Form>
   );

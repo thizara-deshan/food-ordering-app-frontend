@@ -142,7 +142,7 @@ function UserProfileForm({ onSave, isLoading, currentuser }: Props) {
           <LoadingButton />
         ) : (
           <Button type="submit" className="bg-orange-500">
-            Submit
+            {!currentuser ? "Submit" : "Update"}
           </Button>
         )}
       </form>
