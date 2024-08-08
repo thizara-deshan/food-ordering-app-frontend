@@ -39,7 +39,7 @@ function SearchResultCard({ restaurant }: Props) {
             </div>
             <div className="flex items-center gap-1">
               <Banknote />
-              Delivery From Rs.{restaurant.deliveryPrice}/=
+              Delivery Fee: Rs.{restaurant.deliveryPrice}/=
             </div>
           </div>
         </div>

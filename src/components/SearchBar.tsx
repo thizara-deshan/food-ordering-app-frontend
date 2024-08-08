@@ -64,7 +64,7 @@ function SearchBar({ onSubmit, onReset, placeholder, searchQuery }: Props) {
               <FormControl>
                 <Input
                   {...field}
-                  className="border-none text-xl shadow-none focus-visible:ring-0"
+                  className="placeholder-sm border-none text-xl shadow-none focus-visible:ring-0"
                   placeholder={placeholder}
                 />
               </FormControl>

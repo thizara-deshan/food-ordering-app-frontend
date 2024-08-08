@@ -7,7 +7,7 @@ function Footer() {
         <span className="text-3xl text-white font-bold tracking-tight">
           OrderEats
         </span>
-        <span className="text-white font-bold tracking-tight flex gap-4">
+        <span className="text-white text-sm lg:text-lg font-bold tracking-tight flex gap-4">
           <Link to="/privacy">
             <span>Privacy Policy</span>
           </Link>
