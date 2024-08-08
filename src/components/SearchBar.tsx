@@ -45,7 +45,7 @@ function SearchBar({ onSubmit, onReset, placeholder, searchQuery }: Props) {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className={`flex items-center flex-1 gap-3 justify-between flex-row border rounded-full p-3  ${
+        className={`flex items-center flex-1 gap-3 justify-between flex-row border rounded-full p-3 mx-1 ${
           form.formState.errors.searchQuery
             ? "border-red-500"
             : "border-gray-300"
@@ -76,7 +76,7 @@ function SearchBar({ onSubmit, onReset, placeholder, searchQuery }: Props) {
           onClick={handleReset}
           type="button"
           variant="outline"
-          className="rounded-full"
+          className="hidden lg:block rounded-full"
         >
           Clear
         </Button>
