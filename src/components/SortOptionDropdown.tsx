@@ -31,7 +31,7 @@ function SortOptionDropdown({ onChange, sortOptions }: Props) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="cursor-pointer">
-        <Button variant="outline" className=" w-44">
+        <Button variant="outline" className=" w-56">
           Sort by: {sortOptions}
         </Button>
       </DropdownMenuTrigger>
