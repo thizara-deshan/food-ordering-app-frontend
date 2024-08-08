@@ -6,7 +6,11 @@ function UserProfilePage() {
   const { updateUser, isLoading: isUpdateLoading } = useUpdateMyUser();
 
   if (isGetLoading) {
-    return <span>Please Wait... Server takes about 1 minute to Load data</span>;
+    return (
+      <span className="w-8 h-8 border-4 border-dashed rounded-full animate-spin border-orange-500">
+        Please Wait... Server takes about 1 minute to Load data
+      </span>
+    );
   }
   return (
     <UserProfileForm

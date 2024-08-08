@@ -56,7 +56,7 @@ function SearchPage() {
   if (isLoading) {
     return (
       <>
-        <div className="items-center justify-center w-8 h-8 border-4 border-dashed rounded-full animate-spin border-blue-500"></div>
+        <div className="items-center justify-center w-8 h-8 border-4 border-dashed rounded-full animate-spin border-orange-500"></div>
         <span>
           Please Wait... Sometimes Server takes about 1 minute to Load data
         </span>
