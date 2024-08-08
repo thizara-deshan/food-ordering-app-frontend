@@ -54,7 +54,7 @@ function SearchPage() {
   };
 
   if (isLoading) {
-    return <span>Loading...</span>;
+    return <span>Please Wait... Server takes about 1 minute to Load data</span>;
   }
 
   if (!results?.data || !city) {
@@ -63,7 +63,9 @@ function SearchPage() {
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[250px_1fr] gap-5">
-      <div id="cusines-list">Insert Cuisines Here :</div>
+      <div id="cusines-list" className=" font-semibold">
+        Insert Cuisines Here :
+      </div>
       <div id="main-content" className=" flex flex-col gap-5">
         <SearchBar
           searchQuery={searchState.searchQuery}

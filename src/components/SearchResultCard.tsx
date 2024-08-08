@@ -13,7 +13,7 @@ function SearchResultCard({ restaurant }: Props) {
       to={`/details/${restaurant._id}`}
       className="grid lg:grid-cols-[2fr_3fr] md:grid-cols-[2fr_3fr] gap-5 group "
     >
-      <AspectRatio ratio={16 / 6} className="rounded-lg overflow-hidden">
+      <AspectRatio ratio={16 / 9} className="rounded-lg overflow-hidden">
         <img
           src={restaurant.imageurl}
           className="rounded-md w-full h-full object-cover"
