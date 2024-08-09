@@ -7,7 +7,7 @@ type Props = {
 
 function SearchResultsInfo({ total, city }: Props) {
   return (
-    <div className="text-xl font-bold flex flex-col gap-3 justify-between lg:flex-row">
+    <div className="text-xl font-semibold flex flex-col gap-3 justify-between lg:flex-row">
       <span>
         {total} results found in {city}
         <br />

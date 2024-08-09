@@ -7,9 +7,10 @@ function UserProfilePage() {
 
   if (isGetLoading) {
     return (
-      <span className="w-8 h-8 border-4 border-dashed rounded-full animate-spin border-orange-500">
-        Please Wait... Server takes about 1 minute to Load data
-      </span>
+      <>
+        <div className="w-8 h-8 border-4 border-dashed rounded-full animate-spin border-orange-500"></div>
+        <p>Please Wait... Server takes about 1 minute to Load data</p>
+      </>
     );
   }
   return (

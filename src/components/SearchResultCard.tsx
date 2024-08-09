@@ -11,16 +11,16 @@ function SearchResultCard({ restaurant }: Props) {
   return (
     <Link
       to={`/details/${restaurant._id}`}
-      className="grid lg:grid-cols-[2fr_3fr] md:grid-cols-[2fr_3fr] gap-5 group "
+      className="grid lg:grid-cols-[2fr_3fr] md:grid-cols-[2fr_3fr] gap-5 group bg-slate-50/40 p-3 rounded-lg shadow-md hover:shadow-sm transition"
     >
-      <AspectRatio ratio={16 / 9} className="rounded-lg overflow-hidden">
+      <AspectRatio ratio={16 / 9} className=" rounded-lg overflow-hidden">
         <img
           src={restaurant.imageurl}
-          className="rounded-md w-full h-full object-cover"
+          className="transition hover:scale-105 active:scale-105 hover:-translate-y-1 rounded-md w-full h-full object-cover"
         />
       </AspectRatio>
       <div>
-        <h3 className="text-2xl font-bold tracking-tight mb-2 group-hover:underline">
+        <h3 className="text-2xl font-semibold tracking-tight mb-2 group-hover:underline">
           {restaurant.restaurantName}
         </h3>
         <div id="card-content" className="grid md:grid-cols-2 gap-2">
