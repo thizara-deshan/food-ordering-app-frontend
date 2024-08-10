@@ -43,6 +43,7 @@ function SearchPage() {
     setSearchState((prevState) => ({
       ...prevState,
       searchQuery: searchFormData.searchQuery,
+      page: 1,
     }));
   };
   const resetSearch = () => {

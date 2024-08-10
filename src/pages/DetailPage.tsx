@@ -24,11 +24,11 @@ function DetailPage() {
 
   const addtoCart = (menuitem: Restaurant["menuitems"][0]) => {
     setCartItems((prev) => {
-      const isItemInCart = prev.find((item) => item._id === menuitem._id);
+      const isItemInCart = prev.find((item) => item.name === menuitem.name);
 
       if (isItemInCart) {
         return prev.map((item) =>
-          item._id === menuitem._id
+          item.name === menuitem.name
             ? { ...item, quantity: item.quantity + 1 }
             : item
         );
@@ -40,7 +40,7 @@ function DetailPage() {
 
   const removefromCart = (cartItem: CartItem) => {
     setCartItems((prev) => {
-      const updatedCart = prev.filter((item) => item._id !== cartItem._id);
+      const updatedCart = prev.filter((item) => item.name !== cartItem.name);
       return updatedCart;
     });
   };
@@ -77,7 +77,7 @@ function DetailPage() {
           <span className="text-2xl font-semibold tracking-tight">Menu</span>
           {restaurant.menuitems.map((menuItem) => (
             <MenuItem
-              key={menuItem._id}
+              key={menuItem.name}
               menuItem={menuItem}
               addtoCart={() => addtoCart(menuItem)}
             />
